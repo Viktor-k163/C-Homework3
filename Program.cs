@@ -7,6 +7,19 @@
 12821 -> да
 
 23432 -> да*/
+Console.Write("Введите число: ");
+int n = int.Parse(Console.ReadLine());
+int i = n % 10;
+int a = n / 10000;
+if (i == a)
+{
+    Console.Write($" Число {n} является палиндромом.");
+}
+else
+{
+    Console.Write($" Число {n} не является палиндромом.");
+}
+
 
 /*Задача 21
 
@@ -39,13 +52,13 @@ Console.WriteLine($"Расстояние между точками = {result:f2}
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int n = int.Parse(Console.ReadLine());
 for (int i = 1; i <= n; i++)
 {
     int result = Convert.ToInt32(Math.Pow(i, 3));
     Console.Write($"{result} ");
-}
+}*/
     
 
 
